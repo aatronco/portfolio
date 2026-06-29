@@ -1,0 +1,125 @@
+- generic [ref=e5]:
+  - generic [ref=e157]:
+    - link [ref=e159] [cursor=pointer]:
+      - /url: https://wix.com/?referralAdditionalInfo=account-manager
+    - generic [ref=e161]:
+      - generic [ref=e165]:
+        - generic [ref=e166]: All Sites
+        - img [ref=e167]
+      - generic [ref=e170] [cursor=pointer]:
+        - generic [ref=e171]: Explore
+        - img [ref=e173]
+      - link "Hire a Professional" [ref=e176] [cursor=pointer]:
+        - /url: https://www.wix.com/marketplace/brief/match?entry=bm-header&serviceType=1&origin=hire-a-professional&referralAdditionalInfo=Dashboard
+        - generic [ref=e177]: Hire a Professional
+      - button "Help" [ref=e222] [cursor=pointer]:
+        - generic [ref=e223]: Help
+        - img [ref=e225]
+    - generic [ref=e184]:
+      - img [ref=e196] [cursor=pointer]
+      - img [ref=e207] [cursor=pointer]
+      - button [ref=e212] [cursor=pointer]:
+        - img [ref=e217]
+        - img [ref=e220]
+  - generic [ref=e10]:
+    - region "Sidebar" [ref=e13]:
+      - generic [ref=e17]:
+        - img [ref=e23]
+        - generic [ref=e25]:
+          - generic [ref=e28]: alejandro.troncoso@me.com
+          - generic [ref=e29]: alejandro.troncoso@me.com
+      - navigation [ref=e31]:
+        - list [ref=e32]:
+          - listitem [level=1] [ref=e33]:
+            - link "Account Settings" [ref=e37] [cursor=pointer]:
+              - /url: /account/account-settings?referralInfo=sidebar
+              - generic [ref=e45]: Account Settings
+          - separator [ref=e47]
+          - listitem [level=1] [ref=e48]:
+            - link "Domains" [ref=e52] [cursor=pointer]:
+              - /url: /account/domains?referralInfo=sidebar
+              - generic [ref=e60]: Domains
+          - listitem [level=1] [ref=e61]:
+            - link "Business Email" [ref=e65] [cursor=pointer]:
+              - /url: /account/mailboxes?referralInfo=sidebar
+              - generic [ref=e73]: Business Email
+          - listitem [level=1] [ref=e74]:
+            - link "Billing History" [ref=e78] [cursor=pointer]:
+              - /url: /account/billing-history?referralInfo=sidebar
+              - generic [ref=e86]: Billing History
+          - listitem [level=1] [ref=e87]:
+            - link "Premium Subscriptions" [ref=e91] [cursor=pointer]:
+              - /url: /account/subscriptions?referralInfo=sidebar
+              - generic [ref=e99]: Premium Subscriptions
+          - listitem [level=1] [ref=e100]:
+            - link "Payment Methods" [ref=e104] [cursor=pointer]:
+              - /url: /account/payment-methods?referralInfo=sidebar
+              - generic [ref=e112]: Payment Methods
+          - listitem [level=1] [ref=e113]:
+            - link "Wix Payments Accounts" [ref=e117] [cursor=pointer]:
+              - /url: /account/wix-payments?referralInfo=sidebar
+              - generic [ref=e125]: Wix Payments Accounts
+          - separator [ref=e127]
+          - listitem [level=1] [ref=e128]:
+            - link "API Keys" [ref=e132] [cursor=pointer]:
+              - /url: /account/api-keys?referralInfo=sidebar
+              - generic [ref=e140]: API Keys
+    - main "Premium Subscriptions" [active] [ref=e227]:
+      - generic [ref=e240]:
+        - generic [ref=e246]:
+          - heading "Premium Subscriptions 1" [level=1] [ref=e247]:
+            - text: Premium Subscriptions
+            - generic [ref=e248]: "1"
+          - generic [ref=e250]: View and manage Premium subscriptions or paid services.
+        - table [ref=e269]:
+          - rowgroup [ref=e270]:
+            - row [ref=e271]:
+              - columnheader [ref=e272]
+              - columnheader [ref=e273]
+              - columnheader [ref=e274]
+              - columnheader [ref=e275]
+              - columnheader [ref=e276]
+          - rowgroup [ref=e277]:
+            - row [ref=e278]:
+              - cell [ref=e279]
+              - cell [ref=e285]
+              - cell [ref=e291]
+              - cell [ref=e297]
+              - cell [ref=e303]
+            - row [ref=e309]:
+              - cell [ref=e310]
+              - cell [ref=e316]
+              - cell [ref=e322]
+              - cell [ref=e328]
+              - cell [ref=e334]
+            - row [ref=e340]:
+              - cell [ref=e341]
+              - cell [ref=e347]
+              - cell [ref=e353]
+              - cell [ref=e359]
+              - cell [ref=e365]
+            - row [ref=e371]:
+              - cell [ref=e372]
+              - cell [ref=e378]
+              - cell [ref=e384]
+              - cell [ref=e390]
+              - cell [ref=e396]
+            - row [ref=e402]:
+              - cell [ref=e403]
+              - cell [ref=e409]
+              - cell [ref=e415]
+              - cell [ref=e421]
+              - cell [ref=e427]
+            - row [ref=e433]:
+              - cell [ref=e434]
+              - cell [ref=e440]
+              - cell [ref=e446]
+              - cell [ref=e452]
+              - cell [ref=e458]
+            - row [ref=e464]:
+              - cell [ref=e465]
+              - cell [ref=e471]
+              - cell [ref=e477]
+              - cell [ref=e483]
+              - cell [ref=e489]
+        - status [ref=e495]

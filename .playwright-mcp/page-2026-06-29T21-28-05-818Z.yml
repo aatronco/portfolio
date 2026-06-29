@@ -1,0 +1,93 @@
+- generic [ref=e5]:
+  - generic [ref=e23]:
+    - link [ref=e25] [cursor=pointer]:
+      - /url: https://wix.com/?referralAdditionalInfo=account-manager
+    - generic [ref=e27]:
+      - generic [ref=e31]:
+        - generic [ref=e32]: All Sites
+        - img [ref=e33]
+      - generic [ref=e36] [cursor=pointer]:
+        - generic [ref=e37]: Explore
+        - img [ref=e39]
+      - link "Hire a Professional" [ref=e42] [cursor=pointer]:
+        - /url: https://www.wix.com/marketplace/brief/match?entry=bm-header&serviceType=1&origin=hire-a-professional&referralAdditionalInfo=Dashboard
+        - generic [ref=e43]: Hire a Professional
+      - button "Help" [ref=e45] [cursor=pointer]:
+        - generic [ref=e46]: Help
+        - img [ref=e48]
+    - generic [ref=e50]:
+      - img [ref=e62] [cursor=pointer]
+      - img [ref=e73] [cursor=pointer]
+      - button [ref=e78] [cursor=pointer]:
+        - img [ref=e83]
+        - img [ref=e86]
+  - main "Sites" [ref=e13]:
+    - generic [ref=e95]:
+      - generic [ref=e99]:
+        - generic [ref=e102]:
+          - heading "Sites" [level=1] [ref=e103]
+          - generic [ref=e105]: View and manage all your websites in one place.
+        - generic [ref=e107]:
+          - button "Create New Folder" [ref=e111] [cursor=pointer]:
+            - img [ref=e112]
+            - generic [ref=e114]: Create New Folder
+          - link "Create New Site" [active] [ref=e117] [cursor=pointer]:
+            - /url: https://manage.wix.com/create-site?ref=my-sites
+            - img [ref=e118]
+            - generic [ref=e120]: Create New Site
+      - generic [ref=e122]:
+        - button "Create New Site" [ref=e124] [cursor=pointer]:
+          - generic [ref=e125]: Start creating something new
+          - generic [ref=e126]: Build your new site with our new hybrid editor that blends familiar drag-and-drop controls with built-in AI support.
+          - button "Create New Site" [ref=e127]:
+            - img [ref=e128]
+            - text: Create New Site
+        - generic [ref=e131]:
+          - generic [ref=e138]:
+            - button "Filter" [ref=e141] [cursor=pointer]:
+              - img [ref=e142]
+              - generic [ref=e144]: Filter
+            - generic [ref=e151]:
+              - img [ref=e153]
+              - textbox "Search..." [ref=e155]
+            - separator [ref=e157]
+            - radiogroup [ref=e159]:
+              - radio [checked] [ref=e162] [cursor=pointer]:
+                - img [ref=e163]
+              - radio [ref=e168] [cursor=pointer]:
+                - img [ref=e169]
+          - generic [ref=e173]:
+            - generic [ref=e174]:
+              - generic [ref=e176]: Folders
+              - list [ref=e180]:
+                - generic [ref=e186] [cursor=pointer]:
+                  - img [ref=e188]
+                  - generic [ref=e193]: Trash
+            - generic [ref=e202]:
+              - generic [ref=e204]: Sites
+              - list [ref=e208]:
+                - generic [ref=e213] [cursor=pointer]:
+                  - img "My Site 3" [ref=e218]
+                  - separator [ref=e219]
+                  - generic [ref=e220]:
+                    - generic [ref=e221]:
+                      - generic [ref=e222]: My Site 3
+                      - generic [ref=e225]: Not published
+                    - button [ref=e233]:
+                      - img [ref=e235]
+                - generic [ref=e241] [cursor=pointer]:
+                  - generic [ref=e243]:
+                    - img "Agencia Chilena De E" [ref=e246]
+                    - generic [ref=e249]: Premium
+                  - separator [ref=e250]
+                  - generic [ref=e251]:
+                    - generic [ref=e252]:
+                      - generic [ref=e255]: Agencia Chilena De E
+                      - generic [ref=e258]: Not published
+                    - button [ref=e266]:
+                      - img [ref=e268]
+        - status [ref=e276]: 2 results found
+        - generic [ref=e288]:
+          - generic [ref=e289]: Upgrade to Premium. Get a free domain & remove Wix ads from your site.
+          - button "Upgrade Now" [ref=e291] [cursor=pointer]:
+            - generic [ref=e293]: Upgrade Now
