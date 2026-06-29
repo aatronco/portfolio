@@ -1,2 +1,0 @@
-[     214ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://manage.wix.com/headless:0
-[     460ms] [ERROR] Refused to execute script from 'https://www.wix.com/_api/wix-laboratory-server/laboratory/conductAllInScope?scope=error-pages&accept=jsonp&callback=setExperimentsSync' because its MIME type ('application/jsonp') is not executable, and strict MIME type checking is enabled. @ https://manage.wix.com/headless:0
