@@ -1,16 +1,20 @@
-"use client";
-import { useState } from "react";
-
 export function Contact() {
-  const [status, setStatus] = useState<"idle" | "sending" | "sent" | "error">("idle");
-
-  async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
-    e.preventDefault();
-    setStatus("sending");
-    // Placeholder — wire up to an API route or Wix Forms later
-    await new Promise((r) => setTimeout(r, 1000));
-    setStatus("sent");
-  }
+  const LINKS = [
+    {
+      handle: "@aatronco",
+      platform: "TWITTER / X",
+      description: "DMs open",
+      url: "https://twitter.com/aatronco",
+      color: "var(--neon-blue)",
+    },
+    {
+      handle: "aatronco",
+      platform: "GITHUB",
+      description: "Code & projects",
+      url: "https://github.com/aatronco",
+      color: "var(--neon-green)",
+    },
+  ];
 
   return (
     <section
@@ -54,105 +58,68 @@ export function Contact() {
             lineHeight: 1.8,
           }}
         >
-          &gt; Got an interesting problem? I&apos;m open to freelance projects,
-          collaborations, and conversations about weird ideas.
+          &gt; Got an interesting problem? Reach out directly —
+          no forms, no bots, just a message.
         </p>
 
-        {status === "sent" ? (
-          <div
-            className="terminal p-8 text-center"
-          >
-            <p
-              style={{
-                fontFamily: "var(--font-jetbrains-mono)",
-                color: "var(--neon-green)",
-                fontSize: "0.85rem",
-              }}
-              className="glow-green"
+        <div className="flex flex-col gap-4">
+          {LINKS.map((link) => (
+            <a
+              key={link.platform}
+              href={link.url}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="card-module p-5 flex items-center justify-between group"
+              style={{ textDecoration: "none" }}
             >
-              &gt; MESSAGE SENT. TRANSMISSION COMPLETE ✓
-            </p>
-          </div>
-        ) : (
-          <form onSubmit={handleSubmit} className="space-y-4">
-            <div>
-              <label
+              <div>
+                <div
+                  style={{
+                    fontFamily: "var(--font-jetbrains-mono)",
+                    fontSize: "0.6rem",
+                    letterSpacing: "0.25em",
+                    color: "var(--muted)",
+                    marginBottom: "4px",
+                  }}
+                >
+                  {link.platform}
+                </div>
+                <div
+                  style={{
+                    fontFamily: "var(--font-orbitron)",
+                    fontWeight: 700,
+                    fontSize: "1rem",
+                    color: link.color,
+                    textShadow: `0 0 12px ${link.color}`,
+                  }}
+                >
+                  {link.handle}
+                </div>
+                <div
+                  style={{
+                    fontFamily: "var(--font-jetbrains-mono)",
+                    fontSize: "0.65rem",
+                    color: "var(--muted)",
+                    marginTop: "4px",
+                  }}
+                >
+                  {link.description}
+                </div>
+              </div>
+              <span
                 style={{
-                  display: "block",
                   fontFamily: "var(--font-jetbrains-mono)",
-                  fontSize: "0.65rem",
-                  letterSpacing: "0.2em",
-                  color: "var(--muted)",
-                  marginBottom: "6px",
+                  fontSize: "1.2rem",
+                  color: link.color,
+                  opacity: 0.6,
+                  transition: "opacity 0.15s, transform 0.15s",
                 }}
               >
-                NAME
-              </label>
-              <input
-                name="name"
-                required
-                className="input-neon"
-                placeholder="John Doe"
-                autoComplete="name"
-              />
-            </div>
-
-            <div>
-              <label
-                style={{
-                  display: "block",
-                  fontFamily: "var(--font-jetbrains-mono)",
-                  fontSize: "0.65rem",
-                  letterSpacing: "0.2em",
-                  color: "var(--muted)",
-                  marginBottom: "6px",
-                }}
-              >
-                EMAIL
-              </label>
-              <input
-                name="email"
-                type="email"
-                required
-                className="input-neon"
-                placeholder="you@example.com"
-                autoComplete="email"
-              />
-            </div>
-
-            <div>
-              <label
-                style={{
-                  display: "block",
-                  fontFamily: "var(--font-jetbrains-mono)",
-                  fontSize: "0.65rem",
-                  letterSpacing: "0.2em",
-                  color: "var(--muted)",
-                  marginBottom: "6px",
-                }}
-              >
-                MESSAGE
-              </label>
-              <textarea
-                name="message"
-                required
-                rows={5}
-                className="input-neon"
-                placeholder="Tell me about your project..."
-                style={{ resize: "vertical" }}
-              />
-            </div>
-
-            <button
-              type="submit"
-              disabled={status === "sending"}
-              className="btn-neon"
-              style={{ width: "100%", justifyContent: "center" }}
-            >
-              {status === "sending" ? "TRANSMITTING..." : "SEND MESSAGE ///"}
-            </button>
-          </form>
-        )}
+                ↗
+              </span>
+            </a>
+          ))}
+        </div>
       </div>
 
       {/* Footer */}
@@ -178,7 +145,7 @@ export function Contact() {
             color: "var(--muted)",
           }}
         >
-          &copy; {new Date().getFullYear()} — BUILT WITH NEXT.JS + WIX HEADLESS
+          &copy; {new Date().getFullYear()} — BUILT WITH NEXT.JS + GITHUB PAGES
         </span>
       </div>
     </section>
