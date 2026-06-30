@@ -66,6 +66,17 @@ export const PROJECTS: Project[] = [
     githubUrl: "https://github.com/aatronco/lol_champs",
     featured: true,
   },
+  {
+    id: "walmart-marketplace",
+    title: "Walmart Marketplace",
+    description: "Walmart Chile × Jumpseller — inventory sync, orders and web dashboard.",
+    longDescription:
+      "Full integration between Walmart Chile's marketplace and Jumpseller: real-time inventory synchronization, automated order creation, and a web dashboard to manage the entire operation from one place.",
+    stack: ["Ruby", "Walmart API", "Jumpseller API"],
+    language: "Ruby",
+    githubUrl: "https://github.com/aatronco/walmart-marketplace",
+    featured: true,
+  },
 ];
 
 export const LANG_COLORS: Record<string, string> = {
@@ -74,5 +85,6 @@ export const LANG_COLORS: Record<string, string> = {
   Python:      "#00ff9f",
   Swift:       "#ff6b35",
   Liquid:      "#ff0080",
+  Ruby:        "#ff4d4d",
   default:     "#4a5578",
 };
