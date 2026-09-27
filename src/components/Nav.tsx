@@ -1,46 +1,15 @@
-"use client";
-
 export function Nav() {
   return (
-    <nav
-      className="flex items-center justify-between px-6 py-3 border-b"
-      style={{ borderColor: "var(--border)", background: "rgba(7,7,17,0.95)", backdropFilter: "blur(8px)" }}
-    >
-      <a
-        href="/"
-        style={{
-          fontFamily: "var(--font-orbitron)",
-          fontWeight: 900,
-          fontSize: "0.9rem",
-          color: "var(--neon-green)",
-          letterSpacing: "0.2em",
-          textDecoration: "none",
-        }}
-        className="glow-green"
-      >
-        AATRONCO
-      </a>
-
-      <div className="flex items-center gap-6">
-        {["PROJECTS", "ABOUT", "CONTACT"].map((link) => (
-          <a
-            key={link}
-            href={`#${link.toLowerCase()}`}
-            style={{
-              fontFamily: "var(--font-jetbrains-mono)",
-              fontSize: "0.7rem",
-              letterSpacing: "0.15em",
-              color: "var(--muted)",
-              textDecoration: "none",
-              transition: "color 0.15s",
-            }}
-            onMouseEnter={(e) => (e.currentTarget.style.color = "var(--neon-green)")}
-            onMouseLeave={(e) => (e.currentTarget.style.color = "var(--muted)")}
-          >
-            {link}
-          </a>
-        ))}
-      </div>
-    </nav>
+    <header className="site-header">
+      <nav className="wrap nav" aria-label="Navegación principal">
+        <a href="#inicio" className="wordmark" aria-label="ACDE, inicio">acde<span>.cl</span></a>
+        <div className="nav-links">
+          <a href="#migracion">Migraciones</a>
+          <a href="#nutricion">Nutrición</a>
+          <a href="#projects" className="nav-experience">Experiencia</a>
+          <a className="nav-contact" href="#contact">Conversemos <span aria-hidden="true">↗</span></a>
+        </div>
+      </nav>
+    </header>
   );
 }

@@ -1,36 +1,38 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# ACDE · acde.cl
 
-## Getting Started
+Sitio de Alejandro Troncoso para servicios de migración a Jumpseller, desarrollo e integraciones. Plataformas de origen: Shopify, WooCommerce, Wix y VTEX.
 
-First, run the development server:
+## Desarrollo
 
-```bash
+```sh
+npm ci
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Verificación
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```sh
+npm run lint
+npm run build
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Next.js exporta el sitio estático a `out/`. El workflow de GitHub Pages publica esa carpeta al recibir cambios en `main` del repositorio `aatronco/portfolio`. El dominio `acde.cl` está configurado en GitHub Pages.
 
-## Learn More
+## Contenido
 
-To learn more about Next.js, take a look at the following resources:
+- `src/components/Hero.tsx`: propuesta principal y plataformas.
+- `src/components/Migration.tsx`: alcance y proceso.
+- `src/components/Projects.tsx`: ejemplos públicos de integraciones.
+- `src/components/About.tsx`: presentación de Alejandro.
+- `src/components/Contact.tsx`: canal de contacto y primera conversación.
+- `src/app/globals.css`: diseño adaptable y accesibilidad.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+La propuesta prioriza el acompañamiento y la evaluación de cada operación. El alcance y los plazos se acuerdan con cada cliente. Los proyectos enlazados son ejemplos de desarrollo, no testimonios de migraciones.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Software nutricional
 
-## Deploy on Vercel
+La segunda línea comercial presenta NutriCal y proyectos a medida para nutricionistas. Las funciones descritas se contrastaron con el código de `aatronco/nutrical` el 27 de septiembre de 2026: registro de pacientes y evaluaciones, cálculos antropométricos, comparativas, gráficos, informes imprimibles y conexión con Google Sheets.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+`src/components/Nutrition.tsx` contiene la sección. Las modalidades por paciente y Enterprise con tarifa fija son propuestas comerciales a cotizar. No implican que NutriCal ya incluya facturación, gestión de suscripciones ni funciones de administración para múltiples profesionales. La definición de paciente facturable, período, tarifas, volumen y soporte se acuerda en cada propuesta. Las adaptaciones para organizaciones se evalúan como trabajo adicional.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+El repositorio de NutriCal es privado. La web comercial dirige sus consultas a la sección de contacto, sin enlazar a su código.
