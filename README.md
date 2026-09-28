@@ -36,3 +36,9 @@ La segunda línea comercial presenta NutriCal y proyectos a medida para nutricio
 `src/components/Nutrition.tsx` contiene la sección. Las modalidades por paciente y Enterprise con tarifa fija son propuestas comerciales a cotizar. No implican que NutriCal ya incluya facturación, gestión de suscripciones ni funciones de administración para múltiples profesionales. La definición de paciente facturable, período, tarifas, volumen y soporte se acuerda en cada propuesta. Las adaptaciones para organizaciones se evalúan como trabajo adicional.
 
 El repositorio de NutriCal es privado. La web comercial dirige sus consultas a la sección de contacto, sin enlazar a su código.
+
+## Contacto por WhatsApp normal
+
+`WhatsAppButton.tsx` construye un enlace de Click to Chat al pulsar el botón. El número se guarda codificado en `src/lib/whatsapp.mjs` para evitar su aparición literal en el HTML inicial. **Es ofuscación, no cifrado ni privacidad del número:** se puede recuperar desde JavaScript y se ve al abrir WhatsApp. El usuario revisa el mensaje y pulsa Enviar; el sitio no envía mensajes automáticamente.
+
+No requiere WhatsApp Business API, servidor, Cloudflare ni credenciales. Si JavaScript está desactivado, se muestra el contacto alternativo por X. `npm test` comprueba la URL y el componente.

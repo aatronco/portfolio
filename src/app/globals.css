@@ -207,3 +207,7 @@ h3 { font-size: 21px; font-weight: 500; letter-spacing: -.025em; line-height: 1.
   .nutrition-plan { padding: 25px; }
   .nutrition-plan h3 { font-size: 26px; }
 }
+
+.whatsapp-button { border: 0; cursor: pointer; font-family: inherit; }
+.whatsapp-button:focus-visible { outline: 2px solid var(--bg); outline-offset: 5px; }
+.contact-handle a { text-decoration: underline; }
