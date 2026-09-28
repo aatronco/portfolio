@@ -1,57 +1,20 @@
-import { PROJECTS } from "@/lib/projects";
-import { ProjectCard } from "./ProjectCard";
+const projects = [
+  { category: "INVENTARIO Y PEDIDOS", title: "Jumpseller × Walmart", description: "Integración para sincronizar inventario e importar pedidos entre Jumpseller y Walmart Chile, con un panel de administración.", url: "https://github.com/aatronco/walmart-marketplace", number: "01" },
+  { category: "FIDELIZACIÓN", title: "LoyaltyOS Connector", description: "Conexión entre Jumpseller y LoyaltyOS para incorporar puntos, consultar saldos y canjear cupones.", url: "https://github.com/aatronco/jumpseller-loyaltyos-connector", number: "02" },
+  { category: "EXPERIENCIA DE COMPRA", title: "Checkout Kit", description: "Personalizaciones del checkout de Jumpseller: ajustes de campos, autocompletado y alertas mediante Google Tag Manager.", url: "https://github.com/aatronco/jumpseller-checkout-kit", number: "03" },
+];
 
 export function Projects() {
-  const featured = PROJECTS.filter((p) => p.featured);
-
   return (
-    <section id="projects" className="px-6 md:px-16 py-24">
-      {/* Section header */}
-      <div className="flex items-center gap-4 mb-12">
-        <span
-          style={{
-            fontFamily: "var(--font-jetbrains-mono)",
-            fontSize: "0.65rem",
-            color: "var(--neon-pink)",
-            letterSpacing: "0.3em",
-          }}
-        >
-          01
-        </span>
-        <h2
-          style={{
-            fontFamily: "var(--font-orbitron)",
-            fontWeight: 700,
-            fontSize: "1.4rem",
-            letterSpacing: "0.15em",
-            color: "var(--text)",
-          }}
-        >
-          PROJECTS
-        </h2>
-        <div className="flex-1 section-divider" />
-        <span
-          style={{
-            fontFamily: "var(--font-jetbrains-mono)",
-            fontSize: "0.65rem",
-            color: "var(--muted)",
-          }}
-        >
-          {featured.length} MODULES LOADED
-        </span>
-      </div>
-
-      {/* Grid */}
-      <div
-        className="grid gap-4"
-        style={{
-          gridTemplateColumns: "repeat(auto-fill, minmax(300px, 1fr))",
-        }}
-      >
-        {featured.map((project) => (
-          <ProjectCard key={project.id} project={project} />
-        ))}
-      </div>
+    <section id="projects" className="section wrap">
+      <div className="section-heading"><p className="eyebrow">03 / Experiencia aplicada</p><h2>Conocer la plataforma.<br /><span>Conectar lo que necesitas.</span></h2><p>Estos proyectos de desarrollo e integración muestran mi trabajo con Jumpseller. Puedes explorar su código y alcance.</p></div>
+      <div className="project-grid">{projects.map((project) => (
+        <article className="project-card" key={project.title}>
+          <div className="project-top"><span>{project.category}</span><span>{project.number}</span></div>
+          <h3>{project.title}</h3><p>{project.description}</p>
+          <a href={project.url} target="_blank" rel="noopener noreferrer" aria-label={`Ver ${project.title} en GitHub`}>Explorar proyecto <span aria-hidden="true">↗</span></a>
+        </article>
+      ))}</div>
     </section>
   );
 }

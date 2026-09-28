@@ -1,17 +1,11 @@
 import type { Metadata } from "next";
-import { Orbitron, Space_Grotesk, JetBrains_Mono } from "next/font/google";
+import { Space_Grotesk, JetBrains_Mono } from "next/font/google";
 import "./globals.css";
-
-const orbitron = Orbitron({
-  variable: "--font-orbitron",
-  subsets: ["latin"],
-  weight: ["400", "700", "900"],
-});
 
 const spaceGrotesk = Space_Grotesk({
   variable: "--font-space-grotesk",
   subsets: ["latin"],
-  weight: ["300", "400", "500", "600"],
+  weight: ["400", "500", "600", "700"],
 });
 
 const jetbrainsMono = JetBrains_Mono({
@@ -20,25 +14,23 @@ const jetbrainsMono = JetBrains_Mono({
   weight: ["400", "500"],
 });
 
+const title = "ACDE — E-commerce y software para nutricionistas";
+const description = "Migraciones a Jumpseller, integraciones y software para nutricionistas. Conoce NutriCal y sus modalidades por paciente o Enterprise con Alejandro Troncoso.";
+
 export const metadata: Metadata = {
-  title: "Alejandro Troncoso — Developer",
-  description: "Portfolio of Alejandro Troncoso. Building things that work.",
+  metadataBase: new URL("https://acde.cl"),
+  title,
+  description,
+  alternates: { canonical: "/" },
+  icons: { icon: "/acde.svg" },
+  openGraph: { title, description, url: "/", siteName: "ACDE", locale: "es_CL", type: "website" },
+  twitter: { card: "summary", title, description },
 };
 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
+export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html
-      lang="es"
-      className={`${orbitron.variable} ${spaceGrotesk.variable} ${jetbrainsMono.variable}`}
-    >
-      <body className="min-h-screen">
-        <div className="scanlines" aria-hidden />
-        {children}
-      </body>
+    <html lang="es" className={`${spaceGrotesk.variable} ${jetbrainsMono.variable}`}>
+      <body>{children}</body>
     </html>
   );
 }
